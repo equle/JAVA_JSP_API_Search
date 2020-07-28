@@ -25,6 +25,8 @@ try {
 	if (rs.next()) {
 		out.println("로그인 성공");
 		session.setAttribute("name", rs.getString("name"));
+		session.setAttribute("id", rs.getString("id"));
+		session.setAttribute("email", rs.getString("email"));
 		response.sendRedirect("login_check.jsp?c=1");
 	} else {
 		out.println("로그인 실패");

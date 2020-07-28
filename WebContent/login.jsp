@@ -7,14 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>Login</h2>
-<br>
+<h2>로그인</h2>
 <form action="login_ok.jsp" method="get">
-  <label for="id">ID : </label>
-  <input type="text" name="id" id="id"><br>
-  <label for="pw"">PW : </label>
-  <input type="password" name="pw" id="pw"><br><br>
-  <input type="submit" value="login">
+ID : <br><input type="text" name="id"><br>
+PW : <br><input type="password" name="pw"><br><br>
+<input type="submit" value="login"><br><br>
+<a href = "controller.jsp?m=main">메인</a>
+<a href = "controller.jsp?m=join">회원가입</a>
 </form> 
 </body>
 </html>

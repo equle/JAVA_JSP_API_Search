@@ -13,20 +13,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>search page</title>
+<title>mypage.jsp</title>
 </head>
 <body>
-<h2>날씨 검색</h2>
+<h2>마이 페이지</h2>
 	<a href = "controller.jsp?m=main">메인</a>
 <% if(name != null){ %>
 	<a href = "controller.jsp?m=mypage">마이페이지</a>		
 	<a href = "controller.jsp?m=search">날씨 검색</a>		
 	<a href = "controller.jsp?m=logout">로그아웃</a>
 <% } %> <br><br>
-<form action="search_ok.jsp" method="get">
-  <label for="search">검색어 : </label>
-  <input type="text" name="search" id="search">
-  <input type="submit" value="검색">
-</form> 
+<h3>개인 정보</h3>
+ID : <% out.println(session.getAttribute("id")); %><br>
+Name : <% out.println(session.getAttribute("name")); %><br>
+email : <% out.println(session.getAttribute("email")); %><br>
 </body>
 </html>

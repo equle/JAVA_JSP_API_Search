@@ -4,11 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>join.jsp</title>
 </head>
 <body>
 <h2>회원가입</h2>
-<br>
 <form action="join_ok.jsp" method="get">
   <label for="id">아이디 : </label><br>
   <input type="text" name="id" id="id"><br>
@@ -22,7 +21,9 @@
   <input type="text" name="phone" id="phone"><br>
   <label for="email">이메일 : </label><br>
   <input type="email" name="email" id="email"><br><br>
-  <input type="submit" value="join">
+  <input type="submit" value="join"><br><br>
+<a href = "controller.jsp?m=main">메인</a>
+<a href = "controller.jsp?m=login">로그인</a>
 </form> 
 </body>
 </html>
