@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<h2>Login</h2>
 <br>
 <form action="login_ok.jsp" method="get">
   <label for="id">ID : </label>

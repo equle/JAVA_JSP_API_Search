@@ -4,9 +4,7 @@
 <% 
 String id = request.getParameter("id");
 String pw = request.getParameter("pw");
-%>
 
-<%
 Connection conn = null;
 PreparedStatement pstmt = null;
 ResultSet rs =null;
@@ -23,9 +21,10 @@ try {
 	pstmt.setString(2, pw);
 	
 	rs = pstmt.executeQuery();
-	rs.next();
+	
 	if (rs.next()) {
 		out.println("로그인 성공");
+		session.setAttribute("name", rs.getString("name"));
 		response.sendRedirect("login_check.jsp?c=1");
 	} else {
 		out.println("로그인 실패");
